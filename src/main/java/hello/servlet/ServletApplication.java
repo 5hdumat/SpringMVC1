@@ -1,8 +1,10 @@
 package hello.servlet;
 
+import hello.servlet.web.springmvc.v1.SpringMemberFormControllerV1;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.context.annotation.Bean;
 
 /**
  * @ServletComponentScan (스프링부트가 지원하는 서블릿 애노테이션)
@@ -16,5 +18,4 @@ public class ServletApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ServletApplication.class, args);
 	}
-
 }
